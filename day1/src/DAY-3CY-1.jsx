@@ -1,6 +1,6 @@
 import React from 'react';
 const instyle={
-      backgroundColor:'lightblue',
+      backgroundColor:'lightgreen',
       border:'3px solid black',
       margin:'200px',
     height:'300px',
@@ -12,8 +12,8 @@ class Weather extends React.Component{
     {
         super(props);
         this.state={
-            location:'Newyork',
-            Temperature:'20°C',
+            location:'Austraila',
+            Temperature:'69°F',
             Condition:'Sunny'
         }
 
@@ -24,7 +24,7 @@ class Weather extends React.Component{
         const Loc = document.getElementById('loc');
         const Locval = Loc.value;
         
-        this.setState((pre)=>({location:pre.location==='Newyork'?Locval :'Newyork'}))
+        this.setState((pre)=>({location:pre.location==='Australia'?Locval :'Australia'}))
                 
     }
     
